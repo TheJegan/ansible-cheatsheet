@@ -1,0 +1,7 @@
+---
+
+- hosts: <targ_webserver>
+  become: yes
+  remote_user: "{{acount name}}"
+  vars_files:
+    - ./external_vars
